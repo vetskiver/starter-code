@@ -2,6 +2,7 @@ import './App.css'
 import { testConnection } from './lib/supabase.js'
 
 function App() {
+
   const handleTest = async () => {
     console.log('Testing Supabase connection...')
     const result = await testConnection()
@@ -14,12 +15,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Supabase React Starter</h1>
-      <p>Your Supabase connection is ready to test!</p>
-      
-      <button 
+      <h1>English-Farsi Flashcards</h1>
+      <p>Welcome to your language learning app! 🚀</p>
+
+      {/* Test Button*/}
+      <button
         onClick={handleTest}
-        style={{
+        style = {{
           padding: '10px 20px',
           backgroundColor: '#007bff',
           color: 'white',
